@@ -1,0 +1,254 @@
+    1  mkdir CIT173_Lab4
+    2  -al /dev
+    3  ls -al /dev
+    4  ls -al /home
+    5  ls -al /home/Nicholas
+    6  ls -al /home
+    7  ls -al /dev
+    8  ls -al /dev/ > ~/CIT173_Lab4/my-dev-nodes.txt
+    9  ls -al /dev/ > ~/CIT173_Lab4/my-dev-nodes.txt
+   10  cat  ~/CIT173_Lab4/my-dev-nodes.txt
+   11  cat  ~/CIT173_Lab4/my-dev-nodes.txt > /dev/full
+   12  head -c 1024 /dev/random > ~/CIT173_Lab4/my-random-data.txt
+   13  cat  ~/CIT173_Lab4/my-random-data.txt
+   14  lsmod
+   15  lsmod | less
+   16  q
+   17  lsmod > ~/CIT173_Lab4/my-modules-1.txt
+   18  modinfo nfs
+   19  modinfo | less
+   20  modinfo nfs > ~/CIT173_Lab4/my-nfs-info.txt
+   21  modprobe
+   22  sudo modprobe nfs
+   23  lsmod > ~/CIT173_Lab4/my-modules-2.txt
+   24  sudo rmmod nfs
+   25  lsmod > ~/CIT173_Lab4/my-modules-3.txt
+   26  fdisk
+   27  gdisk
+   28  cd /
+   29  ls
+   30  sudo gdisk
+   31  q
+   32  fdisk
+   33  gdisk
+   34  sudo gdisk
+   35  q
+   36  exit
+   37  gdisk
+   38  sudo gdisk
+   39  c
+   40  ?
+   41  sudo gdisk
+   42  ?
+   43  sudo gdisk
+   44  gdisk
+   45  sudo gdisk
+   46  exit
+   47  sudo gdisk
+   48  ls /dev/sd*
+   49  ls -al /dev/ ~/CIT173_Lab4/my-new-dev-nodes.txt
+   50  ls -al /dev/ >  ~/CIT173_Lab4/my-new-dev-nodes.txt
+   51  sudo mkfs.ext4 /dev/sbd1
+   52  sudo mkfs.ext4 /dev/sdb1
+   53  sudo mkfs.ext4 /dev/sdb2
+   54  ls -al
+   55  ls -al /mnt/
+   56  sudo mkdir /mnt/data
+   57  sudo mkdir /mnt/backup
+   58  ls /mnt/
+   59  sudo mount /dev/sdb1 /mnt/data
+   60  sudo mount /dev/sdb1 /mnt/backup
+   61  mount
+   62  mount > ~/CIT173_Lab4/my-mounts.txt
+   63  clear
+   64  df
+   65  df > ~/CIT173_Lab4/my-disk-usage/txt
+   66  df > ~/CIT173_Lab4/my-disk-usage.txt
+   67  sudo umount /dev/sdb1 /dev/sdb2
+   68  sudo mount /dev/sdb2 /mnt/backup
+   69  sudo umount /dev/sdb1 /dev/sdb2
+   70  df
+   71  sudo dd if=/dev/sdb of=~/CIT173_Lab4/gpt.bin bs=512 count=34
+   72  cd ~/CIT173_Lab4
+   73  git init
+   74  git remote add origin http://github.com/saininj/CIT173_Lab4.git
+   75  git add --all
+   76  git commit -m "Lab assignment 4"
+   77  git push origin master
+   78  mkdir CIT173_Lab5
+   79  ls
+   80  cat /etc/fstab
+   81  nano /dev/fstab
+   82  nano /etc/fstab
+   83  ls -all
+   84  gdisk/dev/sdb
+   85  sudo gdisk/dev/sdb
+   86  gdisk/dev/sdb
+   87  ?
+   88  exit
+   89  gdisk/dev/sdb
+   90  sudo gdisk/dev/sdb
+   91  mkdir CITL=173_Lab5
+   92  mkdir CIT173_Lab5
+   93  Q!
+   94  nano /dev/fstab
+   95  sudo nano /dev/fstab
+   96  sudo nano /etc/fstab
+   97  exit
+   98  xit
+   99  exit
+  100  sudo dd if=/dev/random of=/mnt/backup/backup_file2.dat bs
+  101  sudo dd if=/dev/random of=/mnt/backup/backup_file2.dat bs=1 count=1k
+  102  cp /mnt/data/data_file* ~/CIT173_Lab5
+  103  cp /mnt/backup/backup__file* ~/CIT173_Lab5
+  104  sudo cp /mnt/backup/backup__file* ~/CIT173_Lab5
+  105  cat /etc/fstab
+  106  sudo nano /etc/fstab
+  107  cp /mnt/backup/backup__file* ~/CIT173_Lab5
+  108  cp /mnt/backup/backup_file* ~/CIT173_Lab5
+  109  cp /mnt/data/data_file* ~/CIT173_Lab5
+  110  cp /mnt/backup/backup_file* ~/CIT173_Lab5
+  111  cat /etc/fstab
+  112  cp /mnt/backup/backup_file* ~/CIT173_Lab5
+  113  sudo dd if=/dev/random of=/mnt/backup/backup_file1.dat bs=1 count=1k
+  114  sudo dd if=/dev/random of=/mnt/data/data__file1.dat bs=1 count=1k
+  115  sudo dd if=/dev/random of=/mnt/data/data_file2.dat bs=1 count=1k
+  116  sudo dd if=/dev/random of=/mnt/data/data_file1.dat bs=1 count=1k
+  117  cp /mnt/backup/backup_file* ~/CIT173_Lab5
+  118  cp /mnt/data/data_file* ~/CIT173_Lab5
+  119  df > ~/CIT173_Lab5/my-disk-usage.txt
+  120  uname -r
+  121  cat /proc/cpuinfo
+  122  cat /proc/version > ~/CIT173_Lab5/my-procfs.txt
+  123  cat /proc/' >> ~/CIT173_Lab5/my-procfs.txt
+  124  q
+  125  q
+  126  cat /proc/version > ~/CIT173_Lab5/my-procfs.txt
+  127  exit
+  128  xt
+  129  ext
+  130  exit
+  131  quit
+  132  cat /proc/version > ~/CIT173_Lab5/my-procfs.txt
+  133  ps
+  134  ls /proc/2855
+  135  cat /proc/loadavg
+  136  cat /proc/loadavg >> ~/CIT173_Lab5/my-procfs.txt
+  137  sysfs
+  138  ls /proc/2855/mem
+  139  cat /proc/2855/mem
+  140  cat /proc/2855/limits
+  141  ps
+  142  cat /proc/2855/limits
+  143  cat /proc/2855/limits >> ~/CIT173_Lab5/my-procfs.txt
+  144  df
+  145  sudo -i
+  146  history > ~/CIT173_Lab5/my-command-history.txt
+  147  cd ~/CIT173_Lab5
+  148  git init
+  149  git remote add origin http://github.com/<saininj>/CIT173_Lab5.git
+  150  git remote add origin http://github.com/saininj/CIT173_Lab5.git
+  151  add --all
+  152  add -all
+  153  git add --all
+  154  git commit -m "Lab assignment 5"
+  155  git push origin master
+  156  mkdir CIT173_5
+  157  mkdir > CIT173_5
+  158  mkdir > CIT173_Lab6
+  159  mkdir CIT173_Lab6
+  160  mkdir > CIT173_Lab6
+  161  mkdir CIT173_Lab6
+  162  ls
+  163  sudo groupadd actors
+  164  sudo groupadd directors
+  165  sudo groupadd producers
+  166  sudo useradd -m mhamill
+  167  sudo passwd mhamill
+  168  sudo usermod -c "Mark Hamill" mhamill
+  169  sudo usermod -a -G actors mhamill
+  170  sudo useradd -m hford
+  171  sudo passwd hford
+  172  sudo usermod -c "Harrison Ford" hford
+  173  sudo usermod -a -G actors hford
+  174  sudo useradd -m cfisher
+  175  sudo passwd cfisher
+  176  sudo usermod -c "Carrie Fisher" cfisher
+  177  sudo usermod -a -G actors cfisher
+  178  sudo useradd -m glucas
+  179  sudo passwd glucas
+  180  sudo usermod -c "George Lucas" glucas
+  181  sudo usermod -a -G directors glucas
+  182  sudo usermod -a -G producers  glucas
+  183  sudo useradd -m gkurtz
+  184  sudo passwd gkurtz
+  185  sudo usermod -c "Gary Kurtz" gkurtz
+  186  sudo usermod -a -G producers  gkurtz
+  187  cp /etc/passwd ~/CIT173_Lab6/
+  188  cp /etc/passwd ~/CIT173_Lab6
+  189  cp /etc/groups ~/CIT173_Lab6
+  190  cp /etc/group ~/CIT173_Lab6
+  191  history > ~/CIT173_Lab6
+  192  history > ~/CIT173_Lab6/ex1-command-history.txt
+  193* less ~/CIT173_Lab6/
+  194  history > ~/CIT173_Lab6/ex1-command-history.txt
+  195  ls
+  196  mkdir 
+  197  mkdir CIT173_Lab6
+  198  rm CIT173_Lab6
+  199  mkdir CIT173_Lab6
+  200  history > ~/CIT173_Lab6/ex1-command-history.txt
+  201  wget
+  202  ls -al ~/CIT173_Lab6
+  203  cp /etc/passwd ~/CIT173_Lab6
+  204  cp /etc/group ~/CIT173_Lab6
+  205  ls -al ~/CIT173_Lab6
+  206  wget http://github.com/RenoTechnologyAcademy/CIT173_Lab6_Files/archive/master.tar.gz
+  207  man tar
+  208  tar -xvzf master.tar.gz
+  209  ls
+  210* 
+  211  sudo chmod 777  /var/StarWars/
+  212  sudo mkdir /var/StarWars/finance
+  213  sudo mkdir /var/StarWars/directing
+  214  sudo mkdir /var/StarWars/creative
+  215  ls
+  216  ls CIT173_Lab6_Files-master
+  217  ls -al CIT173_Lab6_Files-master
+  218  ls CIT173_Lab6_Files-master
+  219  ls -al CIT173_Lab6_Files-master
+  220  sudo chmod 777 *
+  221  ls -al
+  222  mv CIT173_Lab6_Files-master/star-wars-budget.txt /var/StarWars/finance
+  223  sudo chmod 777 *
+  224  mv CIT173_Lab6_Files-master/star-wars-budget.txt /var/StarWars/finance
+  225  cd /var/StarWars
+  226  ls
+  227  ls -al
+  228  sudo chmod 777 *
+  229  mv CIT173_Lab6_Files-master/star-wars-budget.txt /var/StarWars/finance
+  230  ls
+  231  cd /var/StarWars/
+  232  cd ~
+  233  mv CIT173_Lab6_Files-master/star-wars-budget.txt /var/StarWars/finance
+  234* mv CIT173_Lab6_Files-sc/star-wars-journal.txt /var/StarWars/directing
+  235  mv CIT173_Lab6_Files-master/star-wars-script.txt /var/StarWars/creative
+  236  cd /var/StarWars/
+  237  sudo chown -R gkurtz:producers finance/
+  238  sudo chmod -R 750 finance
+  239  ls -al
+  240  sudo chown -R glucas:directors directing/
+  241  sudo chown -R glucas:actors creative/
+  242  ls -al
+  243  cd ~
+  244  history > ~/CIT173_Lab6/ex2-command-history.txt
+  245  cd /var/StarWars/
+  246  sudo chown -R glucas:directors directing/
+  247  sudo chmod -R 775 directing
+  248  sudo chown -R glucas:actors creative/
+  249  sudo chmod -R 750 creative
+  250  ls -al
+  251  cd ~
+  252  history > ~/CIT173_Lab6/ex2-command-history.txt
+  253  cd /var/StarWars/
+  254  history > ~/CIT173_Lab6/ex2-command-history.txt
